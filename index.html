@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload - Wallbreak</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.js" integrity="sha512-Do1Gpnh47tqiz6kWxcYTWTe2mjZcxA1uwuVGpyZjjzd1I0qFJ6Ai6WMUJy3F+1/8IFW6j4DULDZ6mbidXjSQ0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header class="nav-bar">
+        <h2 class="nav-tit">WallBreak</h2>
+    </header>
+    <div class="cont">
+        <div class="s1">
+            <div class="upload" id="up">
+                <h2>
+                    Click To Upload The Image
+                </h2>
+            </div>
+        </div>
+        <form method="post" action="https://wallbreak-server.onrender.com/uploadImg" class="s2">
+            <div class="control" style="display: none;">
+                <label for="">Img Code</label><br>
+                <input type="text" id="img" name="img">
+            </div>
+            <div class="control">
+                <label for="">Name Of WallPaper</label><br>
+                <input type="text" name="name" placeholder="naruto wallpaper 4k">
+            </div>
+            <div class="control">
+                <label for="">Tags</label><br>
+                <input type="text" name="tags" placeholder="naruto,4k,itachi,anime">
+            </div>
+            <div class="control">
+                <button id="submit">Submit</button>
+            </div>
+            <input type="file" id="image" accept=".png,.jpg,.jpeg" style="display: none;">
+        </form>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
